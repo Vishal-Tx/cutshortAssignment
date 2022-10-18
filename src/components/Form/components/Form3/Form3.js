@@ -12,12 +12,12 @@ const Form3 = ({ formData, setStep, setFormData }) => {
   const heading = "How are you planning to use Eden?";
   const text = "We'll streamline your setup experience accordingly.";
   const bClasses =
-    "group py-4 px-7 w-[205px] border rounded-lg border-slate-200  hover:border-[#664de5] active:border-[#664de5]";
+    "group py-4 px-7 w-[205px] border rounded-lg border-slate-200  hover:border-[#664de5] active:border-[#664de5] cursor-pointer";
 
   const handleSubmit = (event) => {
     event.preventDefault();
     if (!formData.uType) {
-      toast.warn("Please select a Value to move forward");
+      toast.warn("Please select a Value to move forward.");
       return;
     } else {
       setStep((prevStep) => {
@@ -55,7 +55,7 @@ const Form3 = ({ formData, setStep, setFormData }) => {
             <div
               className={
                 formData.uType === uTypes.SELF
-                  ? "group py-1 px-7 w-[205px] border rounded-lg border-[#664de5]"
+                  ? "group py-4 px-7 w-[205px] border rounded-lg border-[#664de5] cursor-pointer"
                   : bClasses
               }
               onClick={() => handleClick(uTypes.SELF)}
@@ -76,7 +76,7 @@ const Form3 = ({ formData, setStep, setFormData }) => {
             <div
               className={
                 formData.uType === uTypes.TEAM
-                  ? "group py-1 px-7 w-[205px] border rounded-lg border-[#664de5]"
+                  ? "group py-4 px-7 w-[205px] border rounded-lg border-[#664de5] cursor-pointer"
                   : bClasses
               }
               onClick={() => handleClick(uTypes.TEAM)}

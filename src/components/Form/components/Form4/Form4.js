@@ -8,7 +8,7 @@ const Form4 = ({ formData, setStep, setFormData }) => {
   const pText = "You have completed onboarding, you can start using the Eden!";
 
   const handleCLick = () => {
-    toast.success(`Congrats ${formData.dName}!`);
+    toast.success(`Congrats, ${formData.dName}!`);
   };
   return (
     <div className="mt-8 w-[450px] mx-auto">
