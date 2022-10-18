@@ -47,7 +47,7 @@ const Form = ({ formData, setStep, setFormData }) => {
             onChange={handleChange}
           />
 
-          <button className="border w-full rounded-lg p-2 my-6 text-slate-200 bg-[#664de5]">
+          <button className="border w-full rounded-lg p-2 my-6 text-slate-200 bg-[#664de5] hover:bg-[rgba(102,77,229,0.9)]">
             Create Workspace
           </button>
         </form>

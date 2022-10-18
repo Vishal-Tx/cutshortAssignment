@@ -45,15 +45,15 @@ const Form2 = ({ formData, setStep, setFormData }) => {
             <input
               className="border my-3 py-3 px-4 rounded-r-lg  w-full border-slate-200 outline-none"
               type="text"
-              id="dName"
-              name="dName"
+              id="wURL"
+              name="wURL"
               placeholder="Example"
-              value={formData.dName}
+              value={formData.wURL}
               onChange={handleChange}
             />
           </div>
 
-          <button className="border w-full rounded-lg p-2 my-6 text-slate-200 bg-[#664de5]">
+          <button className="border w-full rounded-lg p-2 my-6 text-slate-200 bg-[#664de5] hover:bg-[rgba(102,77,229,0.9)]">
             Create Workspace
           </button>
         </form>
