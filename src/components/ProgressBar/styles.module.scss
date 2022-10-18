@@ -1,0 +1,50 @@
+.progressContainer {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  
+  
+    .progressTrack {
+      position: relative;
+      width: 90%;
+      height: 1px;
+      background: rgb(238, 238, 238, 0.4);
+  
+      .progressFilled {
+        position: absolute;
+        height: 100%;
+        background-color: #2233dd;
+        top: 0;
+        left: 0;
+  
+      }
+  
+    .progressList{
+      display: flex;
+      justify-content: space-between;
+  
+      .progressItem {
+        font-size: 14px;
+        border-radius: 50%;
+        border: 1px solid rgb(238, 238, 238, 0.4);
+        height: 35px;
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        transform: translate(0%, -47%);
+        cursor: not-allowed;
+  
+        &.active {
+          background-color: #664de5;
+          color: white;
+          cursor: pointer;
+        }
+      }
+      }
+    }
+  }
